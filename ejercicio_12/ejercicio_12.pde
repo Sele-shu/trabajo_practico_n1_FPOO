@@ -14,12 +14,12 @@ void draw() {
 
 }
 
-void keyPressed() {
+ void keyPressed() {
   nombre_ingresado += key;
   println(nombre_ingresado);
+  mensaje_saludo = "Hola," + nombre_ingresado;
   
   if (key == '\n') {
-    mensaje_saludo = "Hola, " + nombre_ingresado + " encantado en conocerte";
-    println(mensaje_saludo);
+    mensaje_saludo = "Hola, " + nombre_ingresado;
   }
 }
